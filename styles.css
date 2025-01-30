@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Limitar el ancho máximo en pantallas grandes */
+    margin: 0 auto;  /* Centra el contenido */
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #e91e63;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Estilos del botón */
+.button-container {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.accept-btn {
+    background-color: #1e36e9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%;
+}
+
+.accept-btn:hover {
+    background-color: #1b24d8;
+}
+
+/* Media Query para pantallas pequeñas (por ejemplo, teléfonos móviles) */
+@media (max-width: 768px) {
+    .content {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em; /* Reducir tamaño de título en móviles */
+    }
+
+    .button-container {
+        padding: 20px 0;
+    }
+
+    .accept-btn {
+        width: 80%; /* Hacer el botón más grande en móvil */
+        padding: 15px;
+        font-size: 1.2em; /* Ajustar el tamaño de la fuente */
+    }
+}
